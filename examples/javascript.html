@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=latin1">
+  <style type="text/css">
+td.linenos { background-color: #f0f0f0; padding-right: 10px; }
+span.lineno { background-color: #f0f0f0; padding: 0 5px 0 5px; }
+pre { line-height: 125%; }
+body .hll { background-color: #ffffcc }
+body  { background: #ffffff; color: #93a1a1; background-color: #002b36 }
+body .c { color: #586e75; background-color: #002b36 } /* Comment */
+body .err { color: #93a1a1; background-color: #002b36 } /* Error */
+body .g { color: #93a1a1; background-color: #002b36 } /* Generic */
+body .k { color: #859900; background-color: #002b36 } /* Keyword */
+body .l { color: #93a1a1; background-color: #002b36 } /* Literal */
+body .n { color: #93a1a1; background-color: #002b36 } /* Name */
+body .o { color: #93a1a1; background-color: #002b36 } /* Operator */
+body .x { color: #93a1a1; background-color: #002b36 } /* Other */
+body .p { color: #93a1a1; background-color: #002b36 } /* Punctuation */
+body .cm { color: #586e75; background-color: #002b36 } /* Comment.Multiline */
+body .cp { color: #586e75; background-color: #002b36 } /* Comment.Preproc */
+body .c1 { color: #586e75; background-color: #002b36 } /* Comment.Single */
+body .cs { color: #586e75; background-color: #002b36 } /* Comment.Special */
+body .gd { color: #93a1a1; background-color: #002b36 } /* Generic.Deleted */
+body .ge { color: #93a1a1; background-color: #002b36 } /* Generic.Emph */
+body .gr { color: #93a1a1; background-color: #002b36 } /* Generic.Error */
+body .gh { color: #93a1a1; background-color: #002b36 } /* Generic.Heading */
+body .gi { color: #93a1a1; background-color: #002b36 } /* Generic.Inserted */
+body .go { color: #93a1a1; background-color: #002b36 } /* Generic.Output */
+body .gp { color: #93a1a1; background-color: #002b36 } /* Generic.Prompt */
+body .gs { color: #93a1a1; background-color: #002b36 } /* Generic.Strong */
+body .gu { color: #93a1a1; background-color: #002b36 } /* Generic.Subheading */
+body .gt { color: #93a1a1; background-color: #002b36 } /* Generic.Traceback */
+body .kc { color: #2aa198; background-color: #002b36 } /* Keyword.Constant */
+body .kd { color: #268bd2; background-color: #002b36 } /* Keyword.Declaration */
+body .kn { color: #cb4b16; background-color: #002b36 } /* Keyword.Namespace */
+body .kp { color: #859900; background-color: #002b36 } /* Keyword.Pseudo */
+body .kr { color: #859900; background-color: #002b36 } /* Keyword.Reserved */
+body .kt { color: #859900; background-color: #002b36 } /* Keyword.Type */
+body .ld { color: #93a1a1; background-color: #002b36 } /* Literal.Date */
+body .m { color: #2aa198; background-color: #002b36 } /* Literal.Number */
+body .s { color: #2aa198; background-color: #002b36 } /* Literal.String */
+body .na { color: #93a1a1; background-color: #002b36 } /* Name.Attribute */
+body .nb { color: #dc322f; background-color: #002b36 } /* Name.Builtin */
+body .nc { color: #268bd2; background-color: #002b36 } /* Name.Class */
+body .no { color: #93a1a1; background-color: #002b36 } /* Name.Constant */
+body .nd { color: #268bd2; background-color: #002b36 } /* Name.Decorator */
+body .ni { color: #6c71c4; background-color: #002b36 } /* Name.Entity */
+body .ne { color: #b58900; background-color: #002b36 } /* Name.Exception */
+body .nf { color: #268bd2; background-color: #002b36 } /* Name.Function */
+body .nl { color: #93a1a1; background-color: #002b36 } /* Name.Label */
+body .nn { color: #93a1a1; background-color: #002b36 } /* Name.Namespace */
+body .nx { color: #93a1a1; background-color: #002b36 } /* Name.Other */
+body .py { color: #93a1a1; background-color: #002b36 } /* Name.Property */
+body .nt { color: #93a1a1; background-color: #002b36 } /* Name.Tag */
+body .nv { color: #93a1a1; background-color: #002b36 } /* Name.Variable */
+body .ow { color: #859900; background-color: #002b36 } /* Operator.Word */
+body .w { color: #93a1a1; background-color: #002b36 } /* Text.Whitespace */
+body .mf { color: #2aa198; background-color: #002b36 } /* Literal.Number.Float */
+body .mh { color: #2aa198; background-color: #002b36 } /* Literal.Number.Hex */
+body .mi { color: #2aa198; background-color: #002b36 } /* Literal.Number.Integer */
+body .mo { color: #2aa198; background-color: #002b36 } /* Literal.Number.Oct */
+body .sb { color: #2aa198; background-color: #002b36 } /* Literal.String.Backtick */
+body .sc { color: #2aa198; background-color: #002b36 } /* Literal.String.Char */
+body .sd { color: #2aa198; background-color: #002b36 } /* Literal.String.Doc */
+body .s2 { color: #2aa198; background-color: #002b36 } /* Literal.String.Double */
+body .se { color: #2aa198; background-color: #002b36 } /* Literal.String.Escape */
+body .sh { color: #2aa198; background-color: #002b36 } /* Literal.String.Heredoc */
+body .si { color: #2aa198; background-color: #002b36 } /* Literal.String.Interpol */
+body .sx { color: #2aa198; background-color: #002b36 } /* Literal.String.Other */
+body .sr { color: #2aa198; background-color: #002b36 } /* Literal.String.Regex */
+body .s1 { color: #2aa198; background-color: #002b36 } /* Literal.String.Single */
+body .ss { color: #2aa198; background-color: #002b36 } /* Literal.String.Symbol */
+body .bp { color: #268bd2; background-color: #002b36 } /* Name.Builtin.Pseudo */
+body .vc { color: #93a1a1; background-color: #002b36 } /* Name.Variable.Class */
+body .vg { color: #93a1a1; background-color: #002b36 } /* Name.Variable.Global */
+body .vi { color: #93a1a1; background-color: #002b36 } /* Name.Variable.Instance */
+body .il { color: #2aa198; background-color: #002b36 } /* Literal.Number.Integer.Long */
+
+  </style>
+</head>
+<body>
+<h2></h2>
+
+<div class="highlight"><pre><span class="c1">// This is a test</span>
+
+
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+
+  <span class="nb">String</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">reverse</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">).</span><span class="nx">reverse</span><span class="p">().</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+  <span class="p">};</span>
+
+  <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Honza&#39;</span><span class="p">,</span>
+    <span class="nx">email</span><span class="o">:</span> <span class="s1">&#39;me@honza.ca&#39;</span><span class="p">,</span>
+    <span class="nx">count</span><span class="o">:</span> <span class="mi">23</span>
+  <span class="p">};</span>
+
+  <span class="kd">var</span> <span class="nx">pattern</span> <span class="o">=</span> <span class="sr">/([a-z]+)/</span><span class="p">;</span>
+
+  <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">&quot;Honza&quot;</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">doSomething</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">array</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">array</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="p">};</span>
+
+<span class="p">}).</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</pre></div>
+</body>
+</html>
