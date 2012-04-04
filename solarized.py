@@ -1,6 +1,7 @@
 from pygments.style import Style
 from pygments.token import *
 
+
 base03  =  '#002b36'
 base02  =  '#073642'
 base01  =  '#586e75'
@@ -17,6 +18,7 @@ violet  =  '#6c71c4'
 blue    =  '#268bd2'
 cyan    =  '#2aa198'
 green   =  '#859900'
+
 
 def make(fg, bg=base03):
     return 'bg:%s %s' % (bg, fg)
@@ -35,20 +37,20 @@ class SolarizedStyle(Style):
         Keyword:                       make(green),
         Keyword.Constant:              make(cyan), # false, null, undefined
         Keyword.Declaration:           make(blue), # var, function
-        # Keyword.Namespace:             make(),
+        Keyword.Namespace:             make(orange),
         # Keyword.Pseudo:                make(violet),
         # Keyword.Reserved:              make(violet),
         # Keyword.Type:                  make(violet),
 
         # Name:                          make(yellow),
-        # Name.Attribute:                'na',
+        # Name.Attribute:                make(violet),
         Name.Builtin:                  make(red), # Object, Array
-        # Name.Builtin.Pseudo:           'bp',
-        # Name.Class:                    'nc',
-        # Name.Constant:                 'no',
-        # Name.Decorator:                'nd',
-        # Name.Entity:                   'ni',
-        # Name.Exception:                'ne',
+        Name.Builtin.Pseudo:           make(blue),
+        Name.Class:                    make(blue),
+        # Name.Constant:                 make(blue),
+        Name.Decorator:                make(blue),
+        Name.Entity:                   make(violet),
+        Name.Exception:                make(yellow),
         Name.Function:                 make(blue),
         # Name.Property:                 'py',
         # Name.Label:                    'nl',
@@ -84,7 +86,7 @@ class SolarizedStyle(Style):
         # Number.Oct:                    'mo',
 
         # Operator:                      'o',
-        # Operator.Word:                 'ow',
+        Operator.Word:                 make(green),
 
         # Punctuation:                   'p',
 

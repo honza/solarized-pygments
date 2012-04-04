@@ -12,9 +12,9 @@ Progress
 
 * DONE
     * Javascript
+    * Python
 
 * TODO
-    * Python
     * HTML
     * CSS
     * Ruby
